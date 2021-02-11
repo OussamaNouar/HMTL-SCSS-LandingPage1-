@@ -6,13 +6,12 @@ border-box;
 }
 
 :root{
-    font-size: 62.5%;
-    --header1:calc(3.5rem+1vw);
-    --header2:calc(3rem+1vw);
-    --header3:calc(2.5rem+1vw);
-    --header4:calc(2rem+1vw);
-    --text:calc(1.6rem+1vw);
-    --Dark-Violet:hsl(270, 9%, 17%);
+    
+    --header1:calc(2.8rem + 1vw);
+    --header2:calc(2.1rem + 1vw);
+    --header3:calc(1.8rem + 1vw);
+    --header4:calc(1.5rem + 1vw);
+     --Dark-Violet:hsl(270, 9%, 17%);
     --Violet:hsl(256, 26%, 20%);
     --Grayish-Blue:hsl(216, 30%, 68%);
     --DarkGrayish-Violet:hsl(273, 4%, 51%);
@@ -24,15 +23,155 @@ border-box;
 body{
  font-family: 'Karla',sans-serif;
  font-weight: 400;
+
 }
 
-h1,h2,h3{
+h1,h2,h3,h4{
     font-family: 'DM Serif Display',
     serif;
     
 }
 
 h1{
-    font-size: var(--header1);
-    color: var(--VeryLight-Gray);
+     font-size: var(--header1);
+    color: var(--VeryLight-Gray); 
 }
+
+h2{
+    font-size: var(--header2);
+    color:var(--Violet);
+}
+
+h3{
+    font-size: var(--header3);
+    color:var(--VeryLight-Gray);
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+a{
+    text-decoration:none;
+    font-size: var(--text);
+}
+
+p{
+    font-size:var(--text);
+    color:var(--VeryLight-Gray);
+}
+
+
+/* Navbar Section */
+
+nav{
+    display:flex;
+    min-height:10vh;
+    width:80%;
+    margin:auto;
+    padding: 4rem 0rem;
+    align-items:center;
+}
+
+.Logo-Section{
+flex: 1 1 20rem;
+}
+
+.Nav-Links{
+    display: flex;
+    flex: 1 1 20rem;
+    justify-content: space-around;
+    
+}
+
+
+
+.Nav-Links a{
+    color: var(--DarkGrayish-Violet);
+}
+
+.Nav-Button a{
+    color: var(--Violet);
+    padding:1rem 3rem;
+   
+    border:medium solid var(--Violet);
+    
+}
+
+.Nav-Links a:hover{
+  color: var(--Violet); 
+}
+
+.Nav-Button a:hover{
+    background: var(--Violet);
+    color: var(--VeryLight-Gray);
+
+}
+
+/* Hero Section */
+
+.Hero{
+     min-height: 80vh;
+     width: 100%;
+      background-color: var(--Violet);
+      margin: auto;
+      display: flex;
+       position: relative;
+      
+     
+}
+
+.Hero-Container{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+   
+   
+
+   
+
+}
+
+
+
+
+
+.Hero-Left{
+    flex: 1 1 40rem;
+     
+}
+
+
+.BGPattern-Left {
+position:absolute;
+bottom:-15rem;
+left:-3rem;
+
+}
+
+
+.Hero-Right{
+    display: flex;
+    flex: 1 1 40rem;
+}
+
+.BGPattern-Right{
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+
+
+
+
+
+
+
+
+
+
