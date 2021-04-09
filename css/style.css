@@ -1,16 +1,15 @@
 *{
 margin: 0;
 padding:0;
-box-sizing: 
-border-box;
+box-sizing: border-box;
 }
 
 :root{
     
-    --header1:calc(2.8rem + 1vw);
-    --header2:calc(2.1rem + 1vw);
-    --header3:calc(1.8rem + 1vw);
-    --header4:calc(1.5rem + 1vw);
+    --header1:calc(3.5em + 1vw);
+    --header2:calc(2.5em + 1vw);
+    --header3:calc(1.8em + 1vw);
+    --header4:calc(1.5em + 1vw);
      --Dark-Violet:hsl(270, 9%, 17%);
     --Violet:hsl(256, 26%, 20%);
     --Grayish-Blue:hsl(216, 30%, 68%);
@@ -26,7 +25,7 @@ body{
 
 }
 
-h1,h2,h3,h4{
+h1,h2,h3{
     font-family: 'DM Serif Display',
     serif;
     
@@ -39,12 +38,12 @@ h1{
 
 h2{
     font-size: var(--header2);
-    color:var(--Violet);
+    color:var(--Dark-Violet);
 }
 
 h3{
     font-size: var(--header3);
-    color:var(--VeryLight-Gray);
+    color:var(--Dark-Violet);
 }
 
 ul{
@@ -56,9 +55,10 @@ ul{
 a{
     text-decoration:none;
     font-size: var(--text);
+     color: var(--DarkGrayish-Violet);
 }
 
-p{
+p, button{
     font-size:var(--text);
     color:var(--VeryLight-Gray);
 }
@@ -69,9 +69,9 @@ p{
 nav{
     display:flex;
     min-height:10vh;
-    width:80%;
+   width: 80%;
     margin:auto;
-    padding: 4rem 0rem;
+  
     align-items:center;
 }
 
@@ -82,21 +82,15 @@ flex: 1 1 20rem;
 .Nav-Links{
     display: flex;
     flex: 1 1 20rem;
-    justify-content: space-around;
+    justify-content: space-between;
     
 }
 
 
-
-.Nav-Links a{
-    color: var(--DarkGrayish-Violet);
-}
-
 .Nav-Button a{
     color: var(--Violet);
-    padding:1rem 3rem;
-   
-    border:medium solid var(--Violet);
+    padding:0.5rem 3rem;
+   border:medium solid var(--Violet);
     
 }
 
@@ -112,14 +106,15 @@ flex: 1 1 20rem;
 
 /* Hero Section */
 
-.Hero{
-     min-height: 80vh;
+#Hero{
+     min-height: 70vh;
      width: 100%;
-      background-color: var(--Violet);
-      margin: auto;
-      display: flex;
-       position: relative;
-      
+      background-color: var(--Violet); 
+      display: flex; 
+      position: relative;
+      flex-direction: column;
+
+    
      
 }
 
@@ -127,43 +122,133 @@ flex: 1 1 20rem;
     width: 80%;
     display: flex;
     margin: auto;
-    align-items: center;
     justify-content: center;
+    align-items: center;
    
-   
+    
+  
 
-   
 
 }
 
 
-
-
-
 .Hero-Left{
-    flex: 1 1 40rem;
+    flex: 1 1;
+    flex-direction: column;
      
 }
 
 
 .BGPattern-Left {
 position:absolute;
-bottom:-15rem;
-left:-3rem;
+bottom:-15em;
+left:-3em;
 
+}
+
+.Hero-Left hr{
+  border-top: 1px solid var(--VeryLight-Gray);
+  margin-bottom:3em ;  
+  width: 10em;
+}
+
+.Hero-Left p {
+    padding: 2.5em 0;
+}
+
+.Hero-Button{
+  border: 1px solid var(--VeryLight-Gray);
+  background-color: (var(--Violet));
+  padding: 1em 3em;
+
+}
+
+.Hero-Button a {
+    color: var(--VeryLight-Gray);
+}
+
+.Hero-Button:hover{
+    background-color: var(--VeryLight-Gray);
+    color: var(--Violet);
 }
 
 
 .Hero-Right{
-    display: flex;
-    flex: 1 1 40rem;
-}
+    flex: 1 1;
+    position: relative;
+    }
+
+
+
+
 
 .BGPattern-Right{
     position: absolute;
     top:0;
     right:0;
 }
+
+
+/* Benefits Section */
+
+#Benefits{
+    width: 80%;
+    margin: 10em auto 0 auto;
+}
+
+#Benefits hr{
+     border-top: 1px solid var(--VeryLight-Gray);
+     margin-bottom:3em;
+     width: 10em;
+}
+
+.Benefits-Cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+    padding-top: 7.5em;
+    grid-gap: 4em;
+}
+
+
+
+
+.Benefits-Cards p {
+    color:var(--DarkGrayish-Violet);
+}
+
+.Benefits-Cards h3,img{
+    padding-bottom: 1em;
+}
+
+#How-We-Work{
+    width: 80%;
+   margin: 10em auto 0 auto;
+    background-color: var(--Violet);
+}
+
+.About-Us{
+    padding: 2em;
+    display: inline-block;
+}
+
+.About-Us h2{
+    color:var(--VeryLight-Gray);
+    max-width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
