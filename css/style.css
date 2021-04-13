@@ -2,6 +2,7 @@
 margin: 0;
 padding:0;
 box-sizing: border-box;
+
 }
 
 :root{
@@ -16,6 +17,7 @@ box-sizing: border-box;
     --DarkGrayish-Violet:hsl(273, 4%, 51%);
     --VeryLight-Gray:hsl(0, 0%, 98%);
     scroll-behavior: smooth;
+    
 
 }
 
@@ -58,10 +60,21 @@ a{
      color: var(--DarkGrayish-Violet);
 }
 
-p, button{
+p{
     font-size:var(--text);
     color:var(--VeryLight-Gray);
 }
+
+button {
+    border: 1px solid var(--VeryLight-Gray);
+    background-color: (var(--Violet));
+    color: var(--VeryLight-Gray);
+    padding: 1em 3em;
+
+}
+
+
+
 
 
 /* Navbar Section */
@@ -124,17 +137,11 @@ flex: 1 1 20rem;
     margin: auto;
     justify-content: center;
     align-items: center;
-   
-    
-  
-
-
-}
+   }
 
 
 .Hero-Left{
     flex: 1 1;
-    flex-direction: column;
      
 }
 
@@ -156,12 +163,7 @@ left:-3em;
     padding: 2.5em 0;
 }
 
-.Hero-Button{
-  border: 1px solid var(--VeryLight-Gray);
-  background-color: (var(--Violet));
-  padding: 1em 3em;
 
-}
 
 .Hero-Button a {
     color: var(--VeryLight-Gray);
@@ -175,18 +177,23 @@ left:-3em;
 
 .Hero-Right{
     flex: 1 1;
-    position: relative;
     }
 
-
-
+    .HeroIntro-IMG{
+       position: absolute;
+       top: 5em;
+       right: 10%;
+    
+    }
 
 
 .BGPattern-Right{
     position: absolute;
     top:0;
     right:0;
+    z-index: 1;
 }
+
 
 
 /* Benefits Section */
@@ -220,21 +227,71 @@ left:-3em;
     padding-bottom: 1em;
 }
 
+
+/* How Work Section */
+
 #How-We-Work{
-    width: 80%;
+    max-width: 80%;
    margin: 10em auto 0 auto;
     background-color: var(--Violet);
+    position: relative;
 }
 
 .About-Us{
-    padding: 2em;
-    display: inline-block;
+
+   max-width: 90%;
+   margin: auto;
+   padding-top: 3em;
+   
+  
 }
 
+
+
 .About-Us h2{
-    color:var(--VeryLight-Gray);
-    max-width: 50%;
+     color:var(--VeryLight-Gray);
+     max-width: 50%;
+     }
+
+.About-Us p{
+    padding: 2em 0;
+    max-width: 30%;
 }
+
+.About-Us button{
+    margin-bottom: 3em;
+}
+
+.About-Us img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+footer{
+    max-width: 80%;
+    margin: 10em auto 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+   
+
+   
+       
+
+
+
+
+
+
 
 
 
