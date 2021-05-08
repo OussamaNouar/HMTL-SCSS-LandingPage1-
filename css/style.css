@@ -82,7 +82,7 @@ button {
 nav{
     display:flex;
     min-height:10vh;
-   width: 80%;
+   max-width: 80%;
     margin:auto;
   
     align-items:center;
@@ -118,31 +118,30 @@ flex: 1 1 20rem;
 }
 
 /* Hero Section */
-
 #Hero{
-     min-height: 70vh;
-     width: 100%;
-      background-color: var(--Violet); 
-      display: flex; 
-      position: relative;
-      flex-direction: column;
-      
+max-width: 100%;
+background-color: var(--Violet);
+min-height: 80vh;
+display: flex;
+position: relative;
 
-    
-     
+
 }
 
 .Hero-Container{
     width: 80%;
-    display: flex;
     margin: auto;
-    justify-content: center;
+    display: flex;
     align-items: center;
-    }
+    justify-content: center;
+  }
 
-    .Hero-Left{
-        width: 50%;
-    }
+
+  .Hero-Text{
+       flex: 1 1 40em;
+  }
+
+    
 
 
 .BGPattern-Left {
@@ -152,14 +151,15 @@ left:-3em;
 
 }
 
-.Hero-Left hr{
+.Hero-Text hr{
   border-top: 1px solid var(--VeryLight-Gray);
   margin-bottom:3em ;  
   width: 10em;
 }
 
-.Hero-Left p {
-    padding: 2.5em 0;
+
+.Hero-Button{
+    margin-top: 2em;
 }
 
 
@@ -173,10 +173,20 @@ left:-3em;
     color: var(--Violet);
 }
 
-
 .Hero-Right{
-    width:50% ;
-    }
+    flex: 1 1 40em;
+}
+
+
+
+.Hero-Intro img{
+    position: absolute;
+    top: 3em;
+    right: 10%;
+    max-width: 100%;
+}
+
+
 
 
 .BGPattern-Right{
@@ -190,7 +200,7 @@ left:-3em;
 /* Benefits Section */
 
 #Benefits{
-    width: 80%;
+    max-width: 80%;
     margin: 10em auto 0 auto;
 }
 
@@ -303,8 +313,12 @@ z-index: 1;
     font-size: 1.5em;
 }
 
+
+
 .Footer-Socials a:hover{
+    transition: 0.2s ease;
 color: var(--Dark-Violet);
+
 
 }
 
@@ -336,6 +350,92 @@ footer hr{
 .Footer-Middle li:hover{
     text-decoration: underline var(--Dark-Violet);
 }
+
+
+@media screen and   (max-width: 600px) {
+
+.Burger-Menu{
+  display: block;
+  position: relative;  
+}
+
+.Burger-Menu span{
+    padding: 0.1em 1.5em;
+    background: var(--Violet);
+    margin: 0.5em 0em;
+    display: block;
+}
+
+.Nav-Links{
+    display: none ;
+}
+
+#Hero{
+    background-image: url(/images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position:right top;
+}
+
+.Hero-Text{
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin: auto;
+text-align: center;
+
+}
+
+.Hero-Text p{
+    max-width: 100%;
+    padding: 2em;
+}
+
+.Hero-Text hr{
+    display: none;
+}
+
+
+.Hero-Intro img{
+    display: none;
+
+}
+
+.BGPattern-Left,
+.BGPattern-Right {
+    display: none;
+}
+
+#Benefits{
+    text-align: center;
+}
+
+
+#Benefits hr{
+    margin: 0 auto 2em;
+}
+
+#How-We-Work{
+    background-image: url(/images/bg-pattern-intro-left-mobile.svg);
+    background-position: left top ;
+    background-size: auto;
+}
+
+.About-Us{
+    text-align: center;
+}
+
+.Footer-Middle{
+    text-align: center;
+}
+
+
+
+
+
+
+}
+
+
 
 
 
