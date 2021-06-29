@@ -16,189 +16,197 @@
 <body>
 
     <header>
-        <nav>
-            <div class="Logo-Section">
-                <img class="Logo" src="/images/logo.svg" alt="logo">
-            </div>
+        <div class="container row">
 
-            <ul class="Nav-Links">
-                <li><a href="#"> How we work </a></li>
-                <li><a href="#"> Blog </a></li>
-                <li><a href="#"> Account </a></li>
-                <li class="Nav-Button"><a href="#"> View Plans </a></li>
+            <button class="nav-toggle" aria-label="open navigation" type="button">
+                <span class="hamburger"></span>
+            </button>
 
-            </ul>
+            <a href="#" class="logo">
+                <img src="/images/logo.svg" alt="Logo Image">
+            </a>
 
-            <div class="Burger-Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">How we work</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Account</a></li>
+
+                </ul>
+            </nav>
+
+            
+
+        </div>
     </header>
 
     <main>
 
-        <section id="Hero">
+        <section class="hero">
 
-            <div class="Hero-Container">
+            <div class="container row">
 
-            
+                <div class="hero-img">
+                   <img src="/images/image-intro-mobile.jpg" srcset="/images/image-intro-mobile.jpg 320w,
+                    images/image-intro-desktop.jpg 768w" 
+                    sizes="(min-width:768px) 768px, 320px" alt="insure family photo" />
+                </div>
 
-                <div class="Hero-Text">
+                <div class="hero-cta">
 
                     <hr>
-                    <h1> Humanizing your insurance.</h1>
-                    <p> Get your life insurance coverage easier and faster. We blend our expertise
-                        and technology to help you find the plan that's right for you.
-                        Ensure you and your loved ones are protected.</p>
-                    <button class="Hero-Button"> <a href="#"></a>VIEW PLANS</button>
+                    
+                    <h1 class="hero-text"> Humanazing your insurance.</h1>
 
-                    <div class="BGPattern-Left">
-                        <img src="/images/bg-pattern-intro-left-desktop.svg" alt="">
-                    </div>
+                    <p class="hero-information">Get your life insurance coverage easier and faster. 
+                        We blend our expertise and technology to help you find the plan that's right for you.
+                        Ensure you and ypur loved ones are protected.</p>
 
-
+                        <a href="#" class="hero-button"> View plans</a>
 
                 </div>
 
 
-                <div class="Hero-Right">
-                    <div class="Hero-Intro">
-                        <img src="/images/image-intro-desktop.jpg" alt="">
-                    </div>
-                <div class="BGPattern-Right">
-                    <img src="/images/bg-pattern-intro-right-desktop.svg" alt="">
-                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <section class="benefits">
             
-            </div>
-            
-        </div>
-
-        </section>
-
-
-        <section id="Benefits">
-            <hr>
-            <h2>We're different</h2>
-
-            <div class="Benefits-Cards">
-
-                <div class="Snappy-Proces">
-                    <img src="/images/icon-snappy-process.svg" alt="Snappy Proces Icon">
-                    <h3>Snappy process</h3>
-                    <p>Our application process can be completed in minutes, not hours. Don't get
-                        stuck filling in tedious forms</p>
-                </div>
-
-                <div class="Affordable-Prices">
-                    <img src="/images/icon-affordable-prices.svg" alt="Affordable Prices Icon">
-                    <h3>Affordable Prices</h3>
-                    <p>We don't want you about high montly cost. Our prices may be low, but we still
-                        offer the best coverage possible </p>
-                </div>
-
-                <div class="People-First">
-                    <img src="/images/icon-people-first.svg" alt=" People First Icon">
-                    <h3>People First</h3>
-                    <p>Our plans aren't full of conditions and clauses to prevent payouts. We make sure
-                        you're covered when you need it.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section id="How-We-Work">
-            <div class="About-Us">
-                <h2>Find out more about how we work</h2>
-
-                <p>A world full of possibilities and risks. Luckily we can help you prevent those risks</p>
-
-                <button><a href=""></a>HOW WE WORK</button>
-            </div>
-        </section>
-
-        <footer>
-            <div class="Footer-Container">
-                <div class="Footer-Pattern">
-                    <img src="/images/bg-pattern-footer-desktop.svg" alt="">
-                </div>
-                <div class="Footer-Top">
-
-
-                    <div class="Footer-Logo">
-                        <img src="/images/logo.svg" alt="Logo-Image">
-                    </div>
-
-                    <div class="Footer-Socials">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-
-
-                </div>
+            <div class="container">
+                
                 <hr>
+                <h2 class="benefits-cta">We're different</h2>
+                
+                <div class="benefits-grid">
+                    
+                    <div class="benefits-cards snappy-process">
+                        <img src="/images/icon-snappy-process.svg" alt="Snappy Proces Icon">
+                        <h3 class="benefits-title">Snappy process</h3>
+                        <p class="benefits-text">Our application process can be completed in minutes, not hours. Don't get
+                            stuck filling in tedious forms</p>
+                    </div>
+                    
+                    <div class="benefits-cards affordable-prices">
+                        <img src="/images/icon-affordable-prices.svg" alt="Affordable Prices Icon">
+                        <h3 class="benefits-title">Affordable Prices</h3>
+                        <p class="benefits-text">We don't want you about high montly cost. Our prices may be low, but we still
+                            offer the best coverage possible </p>
+                    </div>
+                    
+                    <div class="benefits-cards people-first">
+                        <img src="/images/icon-people-first.svg" alt=" People First Icon">
+                        <h3 class="benefits-title">People First</h3>
+                        <p class="benefits-text">Our plans aren't full of conditions and clauses to prevent payouts. We make sure
+                            you're covered when you need it.
+                        </p>
+                    </div>
+                
+                </div>
+            
+            </div>
 
-                <div class="Footer-Middle">
+        </section>
 
-                    <div class="Company-Section">
-                        <ul>
+        <section class="action container">
+             
+            
+                 
+                <div class="action-content">
+                     <h2 class="action-cta">Find out more about how we work</h2>
+                     <a href="#" class="action-btn">How we work</a>
+                 </div>
+             
+        
+            </section>
 
-                            <li><a href="#"></a>OUR COMPANY</li>
-                            <li><a href="#"></a>HOW WE WORK</li>
-                            <li><a href="#"></a>WHY INSURE</li>
-                            <li><a href="#"></a>VIEW PLANS</li>
-                            <li><a href="#"></a>REVIEWS</li>
+            <footer class="footer">
+
+                <div class="container">
+                    
+                    <div class="footer-socials row">
+                       
+                        <a href="#" class="footer-logo">
+                            <img src="/images/logo.svg" alt="Insure Logo">
+                        </a>
+
+                        <ul class="footer-icons">
+                        
+                            <li class="icon-list facebook"> <a href="#" class="icon-link"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                            <li class="icon-list twitter"> <a href="#"><i class="fab fa-twitter"></i></a>
+                    
+                    </li>
+                            <li class="icon-list pinterest"> <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </li>
+                            <li class="icon-list instagram"> <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
 
                         </ul>
 
                     </div>
 
-                    <div class="Help-Section">
-                        <ul>
-                            <li><a href="#"></a>HELP ME</li>
-                            <li><a href="#"></a>FAQ</li>
-                            <li><a href="#"></a>TERMS OF USE</li>
-                            <li><a href="#"></a>PRIVACY POLICY</li>
-                            <li><a href="#"></a>COOKIES</li>
+                    <hr>
+
+                    <div class="footer-links">
+                        
+                        <ul class="footer-list">
+                            <li class="footer-item first-item"><a href="#" class="footer-link first-link">Our Company</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">How we Work</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Why insure</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Check price</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Reviews</a></li>
+                        </ul>
+                        
+                        <ul class="footer-list">
+                            <li class="footer-item first-item"><a href="#" class="footer-link first-link">Help me</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">FAQ</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Terms of Use</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Privacy Policy</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Cookies</a></li>
+                        </ul>
+                        
+                        <ul class="footer-list">
+                            <li class="footer-item first-item"><a href="#" class="footer-link first-link">Contact</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Sales</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Support</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Live Chat</a></li>
+                        </ul>
+                        
+                        <ul class="footer-list">
+                            <li class="footer-item first-item"><a href="#" class="footer-link first-link">Others</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Careers</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Press</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Licenses</a></li>
                         </ul>
 
+
+                        
+                    
+                    
+                    
                     </div>
 
-                    <div class="Contact-Section">
-                        <ul>
-                            <li><a href="#"></a>CONTACT</li>
-                            <li><a href="#"></a>SALES</li>
-                            <li><a href="#"></a>SUPPORT</li>
-                            <li><a href="#"></a>LIVE CHAT</li>
-                        </ul>
-
-                    </div>
-
-                    <div class="Others-Section">
-                        <ul>
-
-                            <li><a href="#"></a>OTHERS</li>
-                            <li><a href="#"></a>CAREERS</li>
-                            <li><a href="#"></a>PRESS</li>
-                            <li><a href="#"></a>LICENSES</li>
-
-                        </ul>
-
-                    </div>
 
 
                 </div>
 
 
-            </div>
+                
+            </footer>
+
+        
+        
 
 
-        </footer>
+
+<script src= "main.js"></script>
+
     </main>
 
 </body>
