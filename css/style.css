@@ -334,13 +334,7 @@ header {
 
 }
 
-.footer::before{
-    content: url(/images/bg-pattern-footer-mobile.svg);
-    z-index: 0;
-    position: absolute;
-    top: 0;
 
-}
 
 
 .footer-socials{
@@ -561,12 +555,22 @@ header {
         padding-left: 0;
     }
 
+    .footer::before {
+        content: url(/images/bg-pattern-footer-desktop.svg);
+        position: absolute;
+        top: 0;
+        left:0;
+
+    }
+
+    }
 
 
 
 
 
-}
+
+
 
 @media(min-width:1000px){
 
@@ -578,18 +582,14 @@ header {
         z-index: 1;
     }
 
-    .hero::after {
-        content: url(/images/bg-pattern-intro-right-desktop.svg);
-        position: absolute;
-        right: 0;
-        top: 0;
+    .hero::after{
+       content: url(/images/bg-pattern-intro-right-desktop.svg);
+       position: absolute;
+       top: 0;
+       right: 0;
+
     }
 
-    .footer:before{
-        content: url(/images/bg-pattern-footer-desktop.svg);
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+
     
 }
